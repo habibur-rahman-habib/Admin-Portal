@@ -9,6 +9,7 @@ import jakarta.persistence.OneToOne;
 
 @Entity
 public class Payment {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
@@ -90,7 +91,6 @@ public class Payment {
 		this.holderName = holderName;
 	}
 
-	
 	public Order getOrder() {
 		return order;
 	}
